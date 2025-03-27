@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GET 전송 방식</title>
 </head>
 <body>
-    <form>
-        <input type="text" name="search" id="search">
+    <!--아래 처럼 파일 자체의 위치를 입력하는 것을 "절대 경로라고 함."-->
+    <!-- get 전송 방식: form에 입력된 내용을 주소와 함께 주소 입력란에 나타나게 전송. -->
+    <form action="../0320/01.html" method="get">
+        <!-- TEXT 형식만 입력받음. d-->
+        <!-- placeholder: 입력창 안에 텍스트 힌트 -->
+        <input type="text" name="search" id="search" placeholder="검색어를 입력하세요.">
+        <!-- input type="submit(데이터 전송 시)/button(현재 페이지 내에서 동작 시)/reset(입력 값 초기화)"-->
         <input type="submit" value="제출">
     </form>
 </body>
