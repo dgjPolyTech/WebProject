@@ -6,6 +6,24 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <!-- autoplay = 자동재생-->
+    <!-- loop = 반복(loop=2와 같이 반복 횟수 지정 가능)-->
+    <audio src="medias/Kalimba.mp3" controls autoplay loop></audio>
+
+    <!-- mp3 지원하지 않는 브라우저는 ogg 실행. ogg도 실행 안되면 "이 브라우저는..." 문구 출력-->
+    <audio controls>
+        <source src="medias/Kalimba.mp3" type="audio/mp3">
+        <source src="medias/Kalimba.ogg" type="audio/ogg">
+        <p>이 브라우저는 audio 태그를 지원하지 않습니다.</p>
+    </audio>
+    <hr>
+    <!-- webm이 재생되는 브라우저면 우선 지원. 아니면 mp4, 둘다 안되면 맨 아래 문구-->
+    <!-- poster: 영상이 재생되지 않을 때 뜨는 이미지(1200x720은 해상도)-->
+    <!-- poster="https://placehold.co/1200x720"-->
+    <video controls poster="medias/poster1.png">
+        <source src="medias/Wildlife.mp4" type="video/mp4">
+        <source src="medias/Wildlife.webm" type="video/webm">
+        <p>이 브라우저는 video 태그를 지원하지 않습니다.</p>
+    </video>
 </body>
 </html>
