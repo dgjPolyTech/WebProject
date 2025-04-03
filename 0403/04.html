@@ -4,12 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>시멘틱 웹 페이지</title>
+    <style>
+        /* 후손 선택 방식(하위 태그를 모두) */
+        /*
+         header  h1 {
+            color: violet;
+
+        } 
+            */
+        
+        /* 자손 선택 방식(직계 하위 태그 하나만) */
+        header > h1 {
+            color: violet;
+        }
+
+        * {
+            color: brown;
+        }
+
+        /* 기본적인 선택자 3가지: 태그(태그 그대로로), 아이디(#아이디), 클래스(.클래스) */
+        /* "모든* 것을 선택한다는 의미 > *(애스터리스크) */
+    </style>
 </head>
 <body>
     <!-- 시멘틱 웹: 구조적으로 잘 정돈 되어 있는 웹 페이지를 의미.-->
     <!-- header: 문서 최상단 제목 영역-->
     <header>
         <h1>HTML5</h1>
+        <div>
+            <h1>HTML5 div</h1>
+        </div>
     </header>
 
     <!-- nav: 네비게이션. 문서 메뉴 영역 -->

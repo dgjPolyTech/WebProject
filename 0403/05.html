@@ -4,8 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #header {
+            width: 800px;
+            margin: 0 auto;
+            background-color: red;
+        }
+
+        #wrap {
+            width: 800px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        #aside {
+            width: 300px;
+            margin: 0 auto;
+            float: left; /* 오른쪽 배치시 > right */
+            background-color: blue;
+        }
+
+        #content {
+            width: 500px;
+            float: left;
+            background-color: green;
+        }
+
+        /* width를 300/500으로 지정해야지 크기가 header와 딱 맞게됨(800). */
+    </style>
 </head>
 <body>
-    
+    <div id="header">
+        <h1>ID 선택자</h1>
+    </div>
+    <div id="wrap">
+        <div id="aside">
+            <h1>aside ID 선택자</h1>
+        </div>
+        <div id="content">
+            <h1>content ID 선택자</h1>
+        </div>
+    </div>
 </body>
 </html>
