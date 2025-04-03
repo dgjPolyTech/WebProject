@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택 가능한 입력 양식</title>
+</head>
+<body>
+    <form action="../0327/01.html" method="get">
+        <table>
+            <tr>
+                <td><label for="username">이름: </label></td>
+                <td><input type="text" id="username" name="username"></td>
+            </tr>
+            <tr>
+                <td>성별: </td>
+                <td>
+                    <!-- radio 태그는 gender로 묶어줘야 한다.-->
+                    <input type="radio" id="male" name="gender" value="m"> 
+                    <label for="male">남성</label>
+                    <input type="radio" id="female" name="gender" value="f">
+                    <label for="gender">여성</label>
+                </td>
+            </tr>
+            <tr align="center">
+                <td colspan="2">
+                    <button type="submit">가입</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
