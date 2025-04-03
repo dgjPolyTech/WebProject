@@ -22,6 +22,49 @@
                     <label for="gender">여성</label>
                 </td>
             </tr>
+            <tr>
+                <td>관심 분야: </td>
+                <td>
+                    <!-- multiple: select 목록을 한번에 보여줌. ctrl 눌러 여러개 한번에 선택 가능. -->
+                    <select name="interest" multiple>
+                        <option value="sports">스포츠</option>
+                        <option value="music">음악</option>
+                        <option value="game">게임</option>
+                        <option value="movie">영화</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>관심분야(항목그룹화): </td>
+                <td>
+                    <!-- multiple: select 목록을 한번에 보여줌. ctrl 눌러 여러개 한번에 선택 가능. -->
+                    <select name="interest">
+                        <optgroup label="스포츠">
+                            <option value="soccer">축구</option>
+                            <option value="basketball">농구</option>
+                            <option value="baseball">야구</option>
+                        </optgroup>
+                        <optgroup label="음악">
+                            <option value="pop">팝</option>
+                            <option value="rock">락</option>
+                            <option value="classic">클래식</option>
+                        </optgroup>
+                        <optgroup label="게임">
+                            <option value="rpg">RPG</option>
+                            <option value="fps">FPS</option>
+                            <option value="strategy">전략</option>
+                        </optgroup>
+                        <optgroup label="영화">
+                            <option value="action">액션</option>
+                            <option value="comedy">코미디</option>
+                            <option value="drama">드라마</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <!-- ctrl+H > 찾아서 바꾸기 창 활성화 -->
+            <!-- 선택 항목만 바꾸기 > X 왼쪽 목록 버튼 -->
+            <!-- 한번에 바꾸기 > 하단 옆옆 겹쳐진 아이콘 -->
             <tr align="center">
                 <td colspan="2">
                     <button type="submit">가입</button>
