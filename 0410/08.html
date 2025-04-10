@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* li의 마지막 자손에 red 처리한다. */
+        li:last-child{
+            color:green;
+        } 
+
+        /* li의 마지막 자손의 a에 blue처리를 한다. */
+        li:last-child > a{
+            color: red;
+        }
+
+        /* li의 a 태그 중에서 첫번째 자손에 처리를 한다. (* 모든 li에 이 조건이 충족되어 적용됨) */
+        li > a:first-child{
+            color:pink;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <ul>
+        <li>***<a href="#">주의사항1</a></li>
+        <li>***<a href="#">주의사항2</a></li>
+        <li>***<a href="#">주의사항3</a></li>
+        <li>***<a href="#">주의사항4</a></li>
+        <li>***<a href="#">주의사항5</a></li>
+    </ul>
+</body>
+</html>
