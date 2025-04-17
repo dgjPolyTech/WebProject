@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #d1 {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            border: 15px blue;
+            border-style: groove;/* 명암 연출. inset/outset/groove 등의 속성이 있음. */
+            margin: 20px;
+            padding: 30px;
+        }
+
+        #d2 {
+            width: 200px;
+            height: 150px;
+            background-color: yellow;
+            border-style: outset;/* 명암 연출. inset/outset/groove 등의 속성이 있음. */
+            margin: 0 50px 0 50px;
+            padding: 0 30px 0 30px; /* margin, padding에 0 50px만 써서 위아래(0) 좌우(50) 이렇게 속성 주는게 가능 */
+            border-width: thin;
+            border-color: green;
+            border-style: dashed;
+        }
+
+        #d3 {
+            width: 200px;
+            height: 150px;
+            background-color: blue;
+            border-style: outset;/* 명암 연출. inset/outset/groove 등의 속성이 있음. */
+            margin: 0 50px 0 50px;
+            padding: 0 30px 0 30px; /* margin, padding에 0 50px만 써서 위아래(0) 좌우(50) 이렇게 속성 주는게 가능 */
+            border-top: 20px dotted red;
+            border-bottom: 20px double yellow;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">인공지능소프트웨어</div>
+    <hr>
+    <div id="d2">인공지능소프트웨어</div>
+    <hr>
+    <div id="d3">인공지능소프트웨어</div>
+</body>
+</html>
