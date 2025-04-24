@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px; height: 100px;
+            position: absolute;
+        }
+        
+        /* 첫번째/두번째/세번쨰 박스의 css 지정 */
+        .box:nth-child(1) {
+            background-color: red;
+            top: 10px;
+            left: 10px;
+            z-index: 100; 
+            /* 맨 위에 올리고 싶은 속성에게 큰 값을 줌 */
+            /* z-index 안 적으면, 뒤에 나온 값이 앞으로 옴. */
+        }
+
+        .box:nth-child(2) {
+            background-color: green;
+            top: 50px;
+            left: 50px;
+            z-index: 50;
+        }
+
+        .box:nth-child(3) {
+            background-color: blue;
+            top: 90px;
+            left: 90px;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</body>
+</html>
