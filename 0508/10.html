@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable-no, initial-scale=1.0">
+    <title>viewport 메타 요소</title>
+    <style>
+        /* 스마트폰(0~600px 까지) */
+        @media screen and (max-width: 600px){
+            body {
+                background-color: lightblue;
+            }
+        }
+
+        /* 태블릿(600~950px) */
+        @media screen and (min-width: 600px) and (max-width: 950px){
+            body {
+                background-color: yellowgreen;
+            }
+        }
+
+        /* PC(950px 이상이면) */
+        @media screen and (min-width: 950px){
+            body {
+                background-color: crimson;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet</h1>    
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, delectus autem. Aspernatur illum nesciunt voluptate unde facere iusto optio, eveniet a exercitationem natus fugit molestias, mollitia omnis saepe perferendis odio?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, delectus autem. Aspernatur illum nesciunt voluptate unde facere iusto optio, eveniet a exercitationem natus fugit molestias, mollitia omnis saepe perferendis odio?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, delectus autem. Aspernatur illum nesciunt voluptate unde facere iusto optio, eveniet a exercitationem natus fugit molestias, mollitia omnis saepe perferendis odio?
+    </p>
+</body>
+</html>
