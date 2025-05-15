@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let w = 60;
+    let h = 175;
+    let bmi = w/(Math.pow((h/100), 2)); // 무게 / (키를 100으로 나눈 것의 2승)
+
+    if(bmi < 18.5){
+        alert("당신의 BMI는 "+bmi.toFixed(2)+"로 저체중 입니다.");
+    } else if(bmi >= 18.5 && bmi < 22.9) {
+        alert("당신의 BMI는 "+bmi.toFixed(2)+"로 정상 입니다.");
+    } else if(bmi >= 22.9 && bmi < 29.9) {
+        alert("당신의 BMI는 "+bmi.toFixed(2)+"로 과체중 입니다.");
+    } else if(bmi >= 29.9 && bmi < 34.9) {
+        alert("당신의 BMI는 "+bmi.toFixed(2)+"로 비만 입니다.");
+    } else if(bmi >= 34.9)  {
+        alert("당신의 BMI는 "+bmi.toFixed(2)+"로  고도 비만 입니다.");
+    }
+</script>
+</html>

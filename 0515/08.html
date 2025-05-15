@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let date = new Date();
+
+    let year = date.getFullYear();
+    let month = date.getMonth() + 1;
+    let day = date.getDate();
+    let hours = date.getHours();
+    let minute = date.getMinutes();
+    let second = date.getSeconds();
+
+    let result = "";
+
+    if(hours < 12) {
+        result = "오전 ";
+    } else {
+        hours -= 12;
+        result = "오후 ";
+    }
+
+    alert(
+        "현재 년도: "+year+"년\n"+
+        "현재 월: "+month+"월\n"+
+        "현재 일: "+day+"일\n"+
+        "현재 시간: "+result+hours+"시\n"+
+        "현재 분: "+minute+"분\n"+
+        "현재 초: "+second+"초\n"
+    );
+    
+
+</script>
+</html>
