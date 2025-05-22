@@ -4,14 +4,16 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <script>
+            /* window.onload = 브라우저가 로드된 후에 실행하게 함.*/
+            window.onload = function() {
+                document.querySelector('h1').style.backgroundColor = 'red';
+                document.querySelector('h2').style.color = 'grey';
+            }
+        </script>
     </head>
     <body>
         <h1>Korea Politechnics University</h1>
         <h2>Artifical Inteligence Software</h1>
-        <script>
-            /* 이 위치에 적어야 요소 객체가 만들어진 뒤 실행되어 오류가 발생하지 않는다. */
-            document.querySelector('h1').style.backgroundColor = 'red';
-            document.querySelector('h2').style.color = 'grey';
-        </script>
     </body>
 </html>
