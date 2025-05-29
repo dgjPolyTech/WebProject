@@ -33,6 +33,20 @@
             document.body.setAttribute("data-cheerup", "sea animals");
             alert(document.body.getAttribute("data-cheerup"));
         }
+
+        let clock;
+        function callSetClock(){
+            clock = document.querySelectorAll("h1");
+            setClock();
+            setInterval(setClock, 1000);
+        }
+
+        function setClock() {
+            let now  = new Date();
+            //let clock = document.querySelector("h1");
+            clock.innerHTML = now.toString();
+
+        }
     </script>
 </head>
 <body>
@@ -48,5 +62,8 @@
     </select>
     <hr>
     <img id="img1">
+    <hr>
+    <h1></h1>
+    <hr>
 </body>
 </html>
