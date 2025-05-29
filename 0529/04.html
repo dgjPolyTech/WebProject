@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let img;
+        function changeImage(num){
+            img = document.getElementById("img1");
+            link = "";
+            if(num = 1) {
+                link = "imgs/dolpin.png";
+            }
+            img.src = link;
+            img.width = 600;
+        }
+
+        function reset(){
+            img.src = "";
+            img.width = 0;
+        }
+
+        function selectedChangeImage(){
+            let select = document.querySelector("select");
+            img = document.getElementById("img1");
+            let index = select.selectedIndex;
+            img.src = select.options[index].value;
+        }
+    </script>
+</head>
+<body>
+    <button onclick="changeImage()">돌핀</button>
+    <button onclick="reset()">reset</button>
+    <br>
+    <select onchange="selectedChangeImage()">
+        <option value="">select on image</option>
+        <option value="imgs/dolpin.png">돌고래</option>
+        <option value="imgs/octo.png">문어</option>
+        <option value="imgs/hammer.png">상어</option>
+    </select>
+    <hr>
+    <img id="img1">
+</body>
+</html>
