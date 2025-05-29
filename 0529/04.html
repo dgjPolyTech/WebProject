@@ -27,11 +27,18 @@
             let index = select.selectedIndex;
             img.src = select.options[index].value;
         }
+
+        function cheerUp(){
+            // 사용자 정의 속성을 body 요소로 객체에 설정
+            document.body.setAttribute("data-cheerup", "sea animals");
+            alert(document.body.getAttribute("data-cheerup"));
+        }
     </script>
 </head>
 <body>
     <button onclick="changeImage()">돌핀</button>
     <button onclick="reset()">reset</button>
+    <button onclick="cheerUp()">CHEER-UP</button>
     <br>
     <select onchange="selectedChangeImage()">
         <option value="">select on image</option>
