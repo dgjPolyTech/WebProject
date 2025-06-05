@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let img;
+
+        function callAlert(){
+            alert("알림메시지");
+        }
+
+        function overImg(img1){
+            img1.src = "imgs/hammer.png";
+        }
+
+        function outImg(img1) {
+            img1.src = "imgs/dolphin.png";
+        }
+
+        function overImgID() {
+            img = document.getElementById("img1");
+            img.src = "imgs/hammer.png";
+        }
+
+        function outImgID() {
+            img = document.getElementById("img1");
+            img.src = "imgs/dolphin.png";
+        }
+    </script>
+</head>
+<body>
+    <button onclick="callAlert()">알림메시지</button>
+    <img src="imgs/dolphin.png" width=600px; onmouseover="overImg(this)" onmouseout="outImg(this)" />
+    <!-- 위처럼 함수 만들어서 할 수도 있긴 함. -->
+    <img src="imgs/dolphin.png" width=600px; id="img1" onmouseover="this.src='imgs/dolphin.png'" onmouseout="this.src='imgs/hammer.png'"/>
+    <img src="imgs/dolphin.png" width=600px; id="img1" onmouseover="overImgID()" onmouseout="outImgID()"/>
+</body>
+</html>
