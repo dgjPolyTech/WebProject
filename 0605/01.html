@@ -28,9 +28,15 @@
             img = document.getElementById("img1");
             img.src = "imgs/dolphin.png";
         }
+
+        function removeDefault(){
+            event.preventDefault(); // 하이퍼 링크 액션이 실행되지 않게 막는 역할
+        }
     </script>
 </head>
 <body>
+    <a href="../0529/04.html" onclick="removeDefault()">자바스크립트 연습</a>
+    <br>
     <button onclick="callAlert()">알림메시지</button>
     <img src="imgs/dolphin.png" width=600px; onmouseover="overImg(this)" onmouseout="outImg(this)" />
     <!-- 위처럼 함수 만들어서 할 수도 있긴 함. -->
