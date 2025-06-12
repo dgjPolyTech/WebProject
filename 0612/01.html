@@ -7,8 +7,7 @@
     <!-- jQuery 사용 시 필요한 코드 -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script>
-        $(document).ready(
-            function() {
+        $(document).ready(function() {
                 let output = "";
                 for(let i=0; i < 256; i++) {
                     output += "<div></div>";
@@ -18,12 +17,11 @@
 
                 $("div").css({
                     height: 2,
-                    backGroundColor: function(i){
+                    backgroundColor: function (i){
                         return "rgb("+ i +", "+ i +", "+ i +")";
                     }
                 });
-            }
-        );
+            });
     </script>
 </head>
 <body>
