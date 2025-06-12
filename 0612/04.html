@@ -11,7 +11,7 @@
             height: 100px;
             background-color: red;
         }
-        #box:hover{
+        #box.hover{ /* box 위에 마우스가 올라가 있으면(hover) */
             background-color: blue;
             border-radius: 50px;
         }
@@ -20,6 +20,7 @@
         $(document).ready(
             function() {
                 $("#box").hover(function(){
+                    /* box 영역 위에 마우스가 올라가면, 위에서 선언한 box 클래스 스타일이 적용된다. */
                     $("#box").addClass("hover");
                 },
                 function(){
