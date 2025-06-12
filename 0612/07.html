@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Basic(11장 390쪽)</title>
+    <!-- jQuery 사용 시 필요한 코드 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(
+            function() {
+                /* id면 #*/
+                $("#box").css({
+                    width: 100,
+                    height: 100,
+                    backgroundColor: "orange"
+                }).on("click", function(){
+                    $(this).css("backgroundColor", "red")
+                }).on("mouseenter", function(){ //mouseenter = 마우스가 요소 안으로 들어올 때
+                    $(this).css("backgroundColor", "blue")
+                }).on("mouseleave", function(){ //mouseleave = 마우스가 요소 밖으로 나갔을 때
+                    $(this).css("backgroundColor", "orange") // 다시 원래 색상으로 돌아온다.
+                });
+            }
+        );
+    </script>
+</head>
+<body>
+    <div id="box"></div>
+</body>
+</html>
