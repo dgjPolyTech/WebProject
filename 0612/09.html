@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시각 효과</title>
+    <!-- jQuery 사용 시 필요한 코드 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(
+            function() {
+                $("#btn1").click(
+                    function(){
+                        // fadeToggle = fadeIn/fadeOut 번갈아가면서 할 수 있음
+                        $("#content1").fadeToggle('slow');
+                    }
+                );
+            }
+        );
+    </script>
+</head>
+<body>
+    <button id="btn1">Visual Effect</button>
+    <br>
+    <!-- fadeIn()을 사용하려면 div 요소에 display:none으로 css를 적용해야 효과를 확인할 수 있다. -->
+    <div id="content1">
+        <h1>Lorem ipsum dollor sit</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, eius dolorum. Sunt quae commodi in quod autem consequuntur dolor repellat possimus blanditiis ipsum laborum, voluptas, unde reiciendis corporis incidunt obcaecati.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, eius dolorum. Sunt quae commodi in quod autem consequuntur dolor repellat possimus blanditiis ipsum laborum, voluptas, unde reiciendis corporis incidunt obcaecati.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, eius dolorum. Sunt quae commodi in quod autem consequuntur dolor repellat possimus blanditiis ipsum laborum, voluptas, unde reiciendis corporis incidunt obcaecati.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, eius dolorum. Sunt quae commodi in quod autem consequuntur dolor repellat possimus blanditiis ipsum laborum, voluptas, unde reiciendis corporis incidunt obcaecati.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, eius dolorum. Sunt quae commodi in quod autem consequuntur dolor repellat possimus blanditiis ipsum laborum, voluptas, unde reiciendis corporis incidunt obcaecati.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, eius dolorum. Sunt quae commodi in quod autem consequuntur dolor repellat possimus blanditiis ipsum laborum, voluptas, unde reiciendis corporis incidunt obcaecati.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, eius dolorum. Sunt quae commodi in quod autem consequuntur dolor repellat possimus blanditiis ipsum laborum, voluptas, unde reiciendis corporis incidunt obcaecati.
+        </p>
+    </div>
+</body>
+</html>
