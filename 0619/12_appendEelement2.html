@@ -15,10 +15,11 @@
                 color: 'red'
             }).appendTo('body');
         }
+
+        // 문서가 로드되어야 문서 내의 요소에 접근이 가능해서, 요소가 다 생성된 후 동작할 수 있게끔 사용한다.
         $(document).ready(function(){
             $('#btn').click(
                 addElement
-
             );
         })
 
