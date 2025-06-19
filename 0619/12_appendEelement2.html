@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        let count = 0;
+
+        function addElement(){
+            count++;
+            $('<h1>New Create Element'+count+'</h1>').css({
+                backgroundColor: 'black',
+                color: 'red'
+            }).appendTo('body');
+        }
+        $(document).ready(function(){
+            $('#btn').click(
+                addElement
+
+            );
+        })
+
+        // $(document).ready(function() {
+        //     for(let i=0; i<10; i++){
+        //         $('<h1>New Create Element'+ i +'</h1>').css({
+        //             // css 1개가 아닌 여러개 쓸때는 중괄호{}
+        //             backgroundColor: 'black',
+        //             color: 'red'
+        //         }).appendTo('body');
+        //     }
+        // })
+    </script>
+</head>
+<body>
+    <button id="btn">Add</button>
+    <!-- 아래처럼 버튼 자체에 onclick 넣어도 됨.-->
+    <!-- <button onclick="addElement()">Add</button> --> 
+</body>
+</html>
